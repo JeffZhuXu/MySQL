@@ -2,9 +2,6 @@ package UpadateData.tool;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.HashMap;
 
 /*2015.11.29
@@ -177,6 +174,20 @@ public class Database {
 				Class.forName("com.mysql.jdbc.Driver");
 				conn = DriverManager.getConnection(
 						"jdbc:mysql://120.24.167.68:3306/icheck_open_shenzhen","root","wamqy1");
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				//将连接返回
+				return conn;
+			}
+	}
+		//icheck_open_zhenzhen深圳公开数据库
+	 public static Connection getConnectionIcheck_yisinian() {
+			Connection conn = null;	
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				conn = DriverManager.getConnection(
+						"jdbc:mysql://120.24.167.68:3306/yisinian","root","wamqy1");
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
