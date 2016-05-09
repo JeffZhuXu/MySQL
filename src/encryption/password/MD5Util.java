@@ -42,8 +42,8 @@ public class MD5Util {
      * @throws Exception
      */
     public static void main(String args[]) throws Exception {
-        String str = new String("0");
-        System.out.println("原始：" + str);
-        System.out.println("MD5后：" + md5Encode(str));
+        String str1 = new String("0");
+        System.out.println("原始：" + str1);
+        System.out.println("MD5后：" + md5Encode(str1));
     }
 }

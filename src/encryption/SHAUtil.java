@@ -42,8 +42,8 @@ public class SHAUtil {
      * @throws Exception
      */
     public static void main(String args[]) throws Exception {
-        String str = new String("0");
-        System.out.println("原始：" + str);
-        System.out.println("SHA后：" + shaEncode(str));
+        String str1 = new String("0");
+        System.out.println("原始：" + str1);
+        System.out.println("SHA后：" + shaEncode(str1));
     }
 }
